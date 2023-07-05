@@ -1,0 +1,8 @@
+Version: 1.0.2
+  - Added .htacess file to remove .html from navigation link
+
+Version: 1.0.1
+  - Uploaded all tutorial videos to YouTube.
+
+Version: 1.0.0
+  - Initial Release

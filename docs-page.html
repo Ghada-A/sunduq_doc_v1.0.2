@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>SUNDUQ - User Manual</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index"><img class="logo-icon me-2" src="assets/images/sunduq_user_manual_logo.png" alt="logo"></a></div>
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <!-- <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div> -->
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="https://twitter.com/Rapidware_"><i class="fab fa-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/rapidware_/"><i class="fab fa-instagram fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="https://www.linkedin.com/company/rapidware"><i class="fab fa-linkedin fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="https://api.whatsapp.com/message/4DTBDPNKSHTMO1"><i class="fab fa-whatsapp fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+					<a href="https://sunduqsystem.com/" class="btn btn-primary d-none d-lg-flex">What's SUNDUQ</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#introduction"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#dashboard">Dashboard</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#settings"><span class="theme-icon-holder me-2"><i class="fas fa-gear"></i></span>Settings</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#lang-dm">Change Language & Dark Mode</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#warehouse">Edit/Add a Warehouse</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#category">Edit/Add a Category</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#brand">Edit/Add a Brand</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#unit">Edit/Add a Unit</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#backup">Generate System Backup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#profile"><span class="theme-icon-holder me-2"><i class="fas fa-user"></i></span>Profile</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#profile-info">Change Profile Info</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#password">Reset Password</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#people"><span class="theme-icon-holder me-2"><i class="fa-solid fa-user-group"></i></span>People</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#customer">Edit/Add Customer</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#supplier">Edit/Add Supplier</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#users">View Users</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#products"><span class="theme-icon-holder me-2"><i class="fa-solid fa-boxes-stacked"></i></i></span>Products</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-product">Create a Product</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#product-list">View/Edit Products</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#barcode">Print Barcode</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#adjustment"><span class="theme-icon-holder me-2"><i class="fa-solid fa-sitemap"></i></span>Adjustment</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-adjustment">Create Adjustment</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#adjustment-list">View Adjustment List</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#transfer"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-right-arrow-left"></i></span>Transfer</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-transfer">Create a Transfer</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#transfer-list">View Transfer List</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#expenses"><span class="theme-icon-holder me-2"><i class="fas fa-money-bills"></i></span>Expenses</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#expense-category">Create/View Expense Category</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-expense">Create Expense</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#expense-list">Expense List</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#quotation"><span class="theme-icon-holder me-2"><i class="fas fa-file-contract"></i></span>Quotation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-quotation">Create Quotation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#quotation-list">View Quotation List</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#purchase"><span class="theme-icon-holder me-2"><i class="fas fa-file-invoice"></i></span>Purchase</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-purchase">Create Purchase</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#purchase-list">View Purchase List</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#sale"><span class="theme-icon-holder me-2"><i class="fas fa-file-invoice-dollar"></i></span>Sale</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-sale">Create a Sale</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-sale2">Create a Sale (from Quotation)</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#sale-list">View Sale List</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#sales-retrun"><span class="theme-icon-holder me-2"><i class="fas fa-file-circle-minus"></i></span>Sales Return</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-sales-retrun">Create Sales Return</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#sales-retrun-list">View Sales Return List</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#purchase-retrun"><span class="theme-icon-holder me-2"><i class="fas fa-file-circle-xmark"></i></span>Purchase Return</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#create-purchase-retrun">Create Purchase Return</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#purchase-retrun-list">View Purchase Return List</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#reports"><span class="theme-icon-holder me-2"><i class="fas fa-chart-line"></i></span>How To use Reports</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#payments">Payments</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#profits-and-losts">Profits And Losts</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#quantity-alerts">Product Quantity Alerts</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#warehouse-report">Warehouse Report</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#sale-report">Sale Report</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#purchase-report">Purchase Report</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#customer-report">Customer Report</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#supplier-report">Supplier Report</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#report-video">Reports Video Tutorial</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="introduction">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2023-06-12</span></h1>
+					    <section class="docs-intro">
+						    <h5>SUNDUQ - Inventory System & E-Invoices</h5>
+							<p>SUNDUQ is the most User-friendly Sales Management, Inventory Management System & POS. Never worry about managing your business, elevate it and be in control!</p>
+							<h5>What Can you do with SUNDUQ?</h5>
+							<ul>
+								<li><strong>Inventory Management</strong></li>
+								<li><strong>Sales Management</strong></li>
+								<li><strong>Point Of Sale (POS) </strong><span>Comingsoon</span></li>
+							</ul>
+							<br>
+							<p><strong>This documentation will guide you to know everything you need to use the most of SUNDUQ</strong></p>
+						</section><!--//docs-intro-->
+				    </header>
+				    <section class="docs-section" id="dashboard">
+						<h2 class="section-heading">Dashboard</h2>
+						<p>The dashboard is the first thing you will see after you login to SUNDUQ</p>
+						<p>In the dashboard you will see the most useful information to know about the progress of your business</p>
+						<br>
+						<h5>In the Dashboard you'll find the following:</h5>
+						<ul>
+						    <li><strong class="me-1">Today Sales</strong></li>
+						    <li><strong class="me-1">Today Income</strong></li>
+						    <li><strong class="me-1">Today Expenses</strong></li>
+							<li><strong class="me-1">Today Profit</strong></li>
+							<li><strong class="me-1">This Week Sales & Purchases</strong></li>
+							<li><strong class="me-1">Top Selling Products This Month</strong></li>
+							<li><strong class="me-1">Payment Sent & Received This Week</strong></li>
+							<li><strong class="me-1">Top 5 Customers This Month</strong></li>
+							<li><strong class="me-1">Recent Sales</strong></li>
+						</ul>
+						<h6>The following video elistrate how powerful the dashboard is:</h6>
+						<br>
+
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AyH90A0qrKk" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+						
+
+					</section><!--//section-->
+			    </article>
+			    
+			    <article class="docs-article" id="settings">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Settings</h1>
+					    <section class="docs-intro">
+						    <p>In the main settings you will be able to adjust how your run your Warehouse and how the system operates</p>
+							<h5>How to go to main settings:</h5>
+							<ol>
+								<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+								<li>Click on the settings tab</li>
+								<li>Choose one of the subcategories</li>
+							</ol>
+							
+							<p>View settings you will be able to adjust how the system is being viewed</p>
+							<h5>How to go to system view settings:</h5>
+							<ol>
+								<li>Click on the right purple gear</li>
+								<li>It will expand and show you all system view settings (click it again to close it)</li>
+							</ol>
+							
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="lang-dm">
+						<h2 class="section-heading">Change Language & Dark Mode</h2>
+						<ol>
+							<li>Click on the right purple gear of your screen</li>
+							<li>It will expand and show you all system view settings</li>
+						</ol>
+						<p>- All the languages will appear. To change the Language just select one of the flags and it will change automaticly</p>
+						<p>- To change to dark mode just activte the switch</p>
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/LrE5sQENw6k" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="warehouse">
+						<h2 class="section-heading">Edit/Add a Warehouse</h2>
+						<h6>Edit a Warehouse:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Warehouse, the Warehouse list will appear</li>
+							<li>Click the edit button on the warehouse you want to edit</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						<h6>Add a Warehouse:</h6>
+						<div class="callout-block callout-block-warning">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-bullhorn"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p>
+									Adding a warehouse only availble for Premium Members
+								</p>
+							</div>
+							<!--//content-->
+						</div>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Warehouse, the Warehouse list will appear</li>
+							<li>CLick create, fill the form with the needed information</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/vnvacurrag8" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="category">
+						<h2 class="section-heading">Edit/Add a Category</h2>
+						<h6>Edit a Category:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Category, the category list will appear</li>
+							<li>Click the edit button on the category you want to edit</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						<h6>Add a Category:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Category, the category list will appear</li>
+							<li>CLick create and fill the form with the needed information</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						<div class="alert alert-warning" role="alert">
+							Category code cannot be a duplicate
+						</div>
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/mI-OmPNS488" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="brand">
+						<h2 class="section-heading">Edit/Add a Brand</h2>
+						<h6>Edit a Brand:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Brand, the brand list will appear</li>
+							<li>Click the edit button on the brand you want to edit</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						<h6>Add a Brand:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Brand, the brand list will appear</li>
+							<li>CLick create and fill the form with the needed information</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/kmpt697vHm4" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+
+					<section class="docs-section" id="unit">
+						<h2 class="section-heading">Edit/Add a Unit</h2>
+						<p>What is the use of base unit? It helps you organize your inventory, if you purchase your product using a unit but
+							selling it in an other unit.</p>
+						<p>Example: You purchase your product from your supplier in kilogram but you are selling it to your customers in gram. So you
+							create a gram unit and create a kilogram unit with a gram base unit divided by 1000.</p>
+						<h6>Edit a Unit:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Unit, the unit list will appear</li>
+							<li>Click the edit button on the unit you want to edit</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						<h6>Add a Unit:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Unit, the unit list will appear</li>
+							<li>CLick create and fill the form with the needed information</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/WcvjjmLEyMM" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="backup">
+						<h2 class="section-heading">Generate System Backup</h2>
+						<p>For the safty of your data you can generate backups incase you need too. Do not worry the system occasionally will generate a new backup</p>
+						<h6>How to Generate System Backup:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the settings tab</li>
+							<li>Click on the settings tab</li>
+							<li>CLick Backup</li>
+							<li>Click Generate Backup button</li>
+						</ol>
+
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/_cjrsgAG25M" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+					<!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="profile">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Profile</h1>
+					    <section class="docs-intro">
+						    <p>In profile you can change your basic information, your email and your password. In this section you will find all the things you need to know about modifing your profile.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="profile-info">
+						<h2 class="section-heading">Change Profile Info</h2>
+						<ol>
+							<li>Click on the top right profile image</li>
+							<li>Click on Profile, your profile will appear</li>
+							<li>Change your needed information</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						<div class="alert alert-primary" role="alert">
+							Becareful please add a correct email for you to use later when you forget your password or to send you email
+						</div>
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/a4mze4RtW4g" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="password">
+						<h2 class="section-heading">Reset Password</h2>
+						<h6>Change password</h6>
+						<ol>
+							<li>Click on the top right profile image</li>
+							<li>Click on Profile, your profile will appear</li>
+							<li>Change your your password</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						
+						<h6>Reset Password:</h6>
+						<p>If you forgot your password do not worry, please follow the following steps</p>
+						<ol>
+							<li>On the login page click forgot password</li>
+							<li>Type your email</li>
+							<li>Click Reset Password, if correct you will receive an email with a link</li>
+							<li>click on the link and type your new password</li>
+							<li>Click submit</li>
+						</ol>
+						
+						<div class="callout-block callout-block-warning">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-bullhorn"></i>
+									</span>
+									<!--//icon-holder-->
+									Warning
+								</h4>
+								<p>For your own safty please do not share your password with anyone.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<!-- <h6>The following video elistrate how:</h6> -->
+						<!--
+							TODO:// ADD A VIDEO OF THE main settings HERE...
+						-->
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="people">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">People</h1>
+					    <section class="docs-intro">
+						    <p>Let your company be more organized by giving your employees access to the system based on their roles, and you can manage your regular customers and suppliers. In this section you will find all the things you need to know about managing them.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="customer">
+						<h2 class="section-heading">Edit/Add Customer</h2>
+						<h6>Fields:</h6>
+						<ul>
+							<li>Customer Name (required)</li>
+							<li>Email (required) <code>cannot be duplicate</code></li>
+							<li>Phone (required)</li>
+							<li>Country (required)</li>
+							<li>City (required)</li>
+							<li>Address (required)</li>
+							<li>VAT # (required)</li>
+						</ul>
+
+						<h6>Edit a Customer:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the People tab</li>
+							<li>Click on the People tab</li>
+							<li>CLick Customer List, the unit list will appear</li>
+							<li>Click the edit button on the customer you want to edit</li>
+							<li>Click submit after you are done</li>
+						</ol>
+
+						<h6>Add a Customer:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the People tab</li>
+							<li>Click on the People tab</li>
+							<li>CLick Customer List, the customer list will appear</li>
+							<li>CLick create and fill the form with the needed information</li>
+							<li>Click submit after you are done</li>
+						</ol>
+
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Pud2ESYh1a4" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="supplier">
+						<h2 class="section-heading">Add/View Supplier</h2>
+						<h6>Fields:</h6>
+						<ul>
+							<li>Supplier Name (required)</li>
+							<li>Email (required) <code>cannot be duplicate</code></li>
+							<li>Phone (required)</li>
+							<li>Country (required)</li>
+							<li>City (required)</li>
+							<li>Address (required)</li>
+							<li>VAT # (required)</li>
+						</ul>
+
+						<h6>Edit a Supplier:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the People tab</li>
+							<li>Click on the People tab</li>
+							<li>CLick Supplier List, the supplier list will appear</li>
+							<li>Click the edit button on the supplier you want to edit</li>
+							<li>Click submit after you are done</li>
+						</ol>
+						
+						<h6>Add a Supplier:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the People tab</li>
+							<li>Click on the People tab</li>
+							<li>CLick Supplier List, the supplier list will appear</li>
+							<li>CLick create and fill the form with the needed information</li>
+							<li>Click submit after you are done</li>
+						</ol>
+
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/0e82YaTvvHM" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="users">
+						<h2 class="section-heading">View Users</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the People tab</li>
+							<li>Click on the People tab</li>
+							<li>CLick Users List, the users list will appear</li>
+						</ol>
+						<p>To add a new account you can contact support for us to give you a new account.</p>
+						<div class="callout-block callout-block-warning">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-bullhorn"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p>
+									Adding a new accounts only availble for Premium and Business plans
+								</p>
+							</div>
+							<!--//content-->
+						</div>
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qtB3Ir_45Qw" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="products">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Products</h1>
+					    <!-- <section class="docs-intro">
+						    <p>This section will guide you how to change</p>
+						</section>//docs-intro -->
+				    </header>
+				     <section class="docs-section" id="create-product">
+						<h2 class="section-heading">Create a Product</h2>
+						<h6>Fields:</h6>
+						<ul>
+							<li>Product Name (required)</li>
+							<li>Product Code (required) <code>cannot be duplicate</code></li>
+							<li>Category (required)</li>
+							<li>Brand (optional)</li>
+							<li>Barcode Symbology (required)</li>
+							<li>Product Cost (required)</li>
+							<li>Product Price (required)</li>
+							<li>Product Unit (required)</li>
+							<li>Sale Unit (required)</li>
+							<li>Purchase Unit (required)</li>
+							<li>Stock Alert (optional)</li>
+							<li>Order VAT % (required)</li>
+							<li>VAT Method (required)</li>
+							<li>Note (optional)</li>
+							<li>Add multiple product image (optional)</li>
+							<li>Add multiple variant of a product (optional)</li>
+						</ul>
+
+						<h6>Create a Product:</h6>
+						<ol>
+							<li>Click on the Product tab</li>
+							<li>CLick Create Product</li>
+							<li>Fill the form with the needed information</li>
+							<li>Click submit after you are done</li>
+						</ol>
+
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/YFuv2WU3gIo" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="product-list">
+						<h2 class="section-heading">View/Edit Products</h2>
+						<h6>Edit Product:</h6>
+						<ol>
+							<li>Click on the Product tab</li>
+							<li>CLick Product List</li>
+							<li>Click the edit button on the product you want to edit</li>
+							<li>Click submit after you are done</li>
+						</ol>
+
+						<h6>View Product:</h6>
+						<p>You can export your product list as Excel or as PDF</p>
+						
+						<ol>
+							<li>Click on the Product tab</li>
+							<li>CLick Product List</li>
+						</ol>
+
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KfLmXKZffNk" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="barcode">
+						<h2 class="section-heading">Print Barcode</h2>
+						<p>Printing barcode is for you to add it to your products physically and you can scan it into the system. It will help you to search your products faster.</p>
+						<p>The barcode type depened on Barcode Symbology you selected when you created the product.</p>
+						<ol>
+							<li>Click on the Product tab</li>
+							<li>CLick Print Barcode</li>
+							<li>Select A warehouse</li>
+							<li>Add a product (only one)</li>
+							<li>Choose your quantity</li>
+							<li>Select paper size</li>
+							<li>Click update</li>
+							<li>Click Print</li>
+						</ol>
+
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dm7D72jShTE" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+		        <article class="docs-article" id="adjustment">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Adjustment</h1>
+					    <section class="docs-intro">
+						    <p>The use of adjustment is to adjust your products stock by adding/subtracting without the need to record a purchase or a sale. This section will guid you through all the functionality you can do</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="create-adjustment">
+						<h2 class="section-heading">Create Adjustment</h2>
+						<ol>
+							<li>Click on the Adjustment tab</li>
+							<li>CLick Create Adjustment</li>
+							<li>Select A warehouse</li>
+							<li>Add a product</li>
+							<li>Choose your quantity</li>
+							<li>Select the type of operation (Addition/Subtraction)</li>
+							<li>Add a note (optional)</li>
+							<li>Click Submit</li>
+						</ol>
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Qc0QUQn4N-o" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="adjustment-list">
+						<h2 class="section-heading">View Adjustment List</h2>
+						<ol>
+							<li>Click on the Adjustment tab</li>
+							<li>CLick Adjustment List</li>
+						</ol>
+						<p>You can export your adjustment list as Excel or as PDF.</p>
+						<p>You can edit an adjustment by clicking the edit button on the adjustment you want to edit.</p>
+						<h6>The following video elistrate how:</h6>
+						<!--
+							TODO:// ADD A VIDEO OF THE main settings HERE...
+						-->
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/BA7qdWOiM8I" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="transfer">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Transfer</h1>
+					    <section class="docs-intro">
+						    <p>The use of transfer is to transfer your products from warehouse to another.This section will guid you through all the functionality you can do</p>
+							<div class="callout-block callout-block-warning">
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1">
+											<i class="fas fa-bullhorn"></i>
+										</span>
+										<!--//icon-holder-->
+										Note
+									</h4>
+									<p>
+										This feature is only availble for Premium Members
+									</p>
+								</div>
+								<!--//content-->
+							</div>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="create-transfer">
+						<h2 class="section-heading">Create a Transfer</h2>
+						<ol>
+							<li>Click on the Transfer tab</li>
+							<li>CLick Create Transfer</li>
+							<li>Select a from warehouse (the warehouse you will move your products from)</li>
+							<li>Select a to warehouse (the warehouse you want to move your product to)</li>
+							<li>Add a product</li>
+							<li>Choose your quantity</li>
+							<li>Select the type of operation (Addition/Subtraction)</li>
+							<li>Add a note (optional)</li>
+							<li>Click Submit</li>
+						</ol>
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/FsUZPTsIcxQ" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="transfer-list">
+						<h2 class="section-heading">View Transfer List</h2>
+						<ol>
+							<li>Click on the Transfer tab</li>
+							<li>CLick Transfer List</li>
+						</ol>
+						<p>You can export your transfer list as Excel or as PDF.</p>
+						<p>You can edit a transfer by clicking the edit button on the transfer you want to edit.</p>
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/i9ICCs78ysY" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="expenses">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Expenses</h1>
+					    <section class="docs-intro">
+						    <p>The use of expenses feature is to record all your simple warehouse/store expenses like electricity bill, water for employees, paper and printers... etc. This section will guid you through all the functionality you can do.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="expense-category">
+						<h2 class="section-heading">Create/View Expense Category</h2>
+						<h6>Fields:</h6>
+						<ul>
+							<li>Expense Category Name (required)</li>
+							<li>Note (optional)</li>
+						</ul>
+						<h6>View Expense Category</h6>
+						<ol>
+							<li>Click on the Expense tab</li>
+							<li>CLick Expense Category</li>
+						</ol>
+						<p>To create an Expense Category click on create button and fill the form with the needed information</p>
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lAraHVX2R3M" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="create-expense">
+						<h2 class="section-heading">Create Expense</h2>
+						<ol>
+							<li>Click on the Expense tab</li>
+							<li>CLick Create Expense</li>
+							<li>Select a warehuose</li>
+							<li>Select a category</li>
+							<li>Type the amount</li>
+							<li>Add details</li>
+							<li>Click Submit</li>
+						</ol>
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IrheswXWAig" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="expense-list">
+						<h2 class="section-heading">Expense List</h2>
+						<ol>
+							<li>Click on the Expense tab</li>
+							<li>CLick Expense List</li>
+						</ol>
+						<p>You can export your transfer list as Excel or as PDF.</p>
+						<p>You can edit a transfer by clicking the edit button on the transfer you want to edit.</p>
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wqoEbaea0cA" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="quotation">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Quotation</h1>
+					    <section class="docs-intro">
+						    <p>The use of quotation feature is to help you to send an initial pricing to make sure the customer is satisfied with price and the Order before you make a sale.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="create-quotation">
+						<h2 class="section-heading">Create Quotation</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Quotation tab</li>
+							<li>CLick on the Quotation tab</li>
+							<li>Click Create Quotation </li>
+							<li>Select a customer</li>
+							<li>Select a warehouse</li>
+							<li>Add products</li>
+							<li>Type a discount amount (optional)</li>
+							<li>Type a shipping amount (optional)</li>
+							<li>Select a status</li>
+							<li>Add notes (optional)</li>
+							<li>Click Submit</li>
+						</ol>
+
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/djK1whA7oIg" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="quotation-list">
+						<h2 class="section-heading">View Quotation List</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Quotation tab</li>
+							<li>CLick on the Quotation tab</li>
+							<li>Click Quotation List</li>
+						</ol>
+						<p>You can export your Quotation list as Excel or as PDF.</p>
+						<p>You can edit a transfer by clicking the edit button on the transfer you want to edit.</p>
+						<p>You can export your Quotation as PDF by clicking on the Action button then click Download PDF</p>
+						
+						<h6>Send your Quotation to your customer email directly:</h6>
+						<ol>
+							<li>First make sure the customer email is correct</li>
+							<li>View Quotation List</li>
+							<li>Click the action button on the quotation you want to send</li>
+							<li>Click Detail Quotation</li>
+							<li>Click Email button</li>
+						</ol>
+
+						<h6>The following video elistrate how:</h6>
+						
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HqZN-XQDAHk" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+				<article class="docs-article" id="purchase">
+					<header class="docs-header">
+						<h1 class="docs-heading">Purchase</h1>
+						<section class="docs-intro">
+							<p>The use of purchase feature is to help you organize your imports and products expenses and make sure you paid about the status of your purchases.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="create-purchase">
+						<h2 class="section-heading">Create Purchase</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Purchase tab</li>
+							<li>CLick on the Purchase tab</li>
+							<li>Click Create Purchase </li>
+							<li>Select a supplier</li>
+							<li>Select a warehouse</li>
+							<li>Add products</li>
+							<li>Type a discount amount (optional)</li>
+							<li>Type a shipping amount (optional)</li>
+							<li>Select a status</li>
+							<li>Add notes (optional)</li>
+							<li>Click Submit</li>
+						</ol>
+				
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cIdECnpQjEY" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+				
+					<section class="docs-section" id="purchase-list">
+						<h2 class="section-heading">View Purchase List</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Purchase tab
+							</li>
+							<li>CLick on the Purchase tab</li>
+							<li>Click Purchase List</li>
+						</ol>
+						<p>You can export your Purchase List as Excel or as PDF.</p>
+						<p>You can export your purchase invoice as PDF by clicking on the Action button then click Download PDF</p>
+						
+						<h6>Add a payment to a purchase:</h6>
+						<p>If you paid the supplier on certain purchase and you want to record that payment. You can pay in installment by not typing the full amount.</p>
+						<ol>
+							<li>View Purchase List</li>
+							<li>Click the action button on the purchase you want</li>
+							<li>Click Create Patment</li>
+							<li>Type the received amount</li>
+							<li>Type the paying amount</li>
+							<li>Select the type of payment</li>
+							<li>Add note (optional)</li>
+							<li>Click submit button</li>
+						</ol>
+
+						<h6>Send your purchase invoice to your supplier email directly:</h6>
+						<ol>
+							<li>First make sure the supplier email is correct</li>
+							<li>View Purchase List</li>
+							<li>Click the action button on the purchase you want to send</li>
+							<li>Click Detail Purchase</li>
+							<li>Click Email button</li>
+						</ol>
+				
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Wl2CjXAyynY" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="sale">
+					<header class="docs-header">
+						<h1 class="docs-heading">Sale</h1>
+						<section class="docs-intro">
+							<p>The use of sale feature is to help you record all your sales and link it to your customers. It will help you organize your sales more.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="create-sale">
+						<h2 class="section-heading">Create a Sale</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Sale tab
+							</li>
+							<li>CLick on the Sale tab</li>
+							<li>Click Create Sale </li>
+							<li>Select a customer</li>
+							<li>Select a warehouse</li>
+							<li>Add products</li>
+							<li>Type a discount amount (optional)</li>
+							<li>Type a shipping amount (optional)</li>
+							<li>Select a status</li>
+							<li>Select payment status</li>
+							<li>Select payment choice (optional)</li>
+							<li>Type received amount (optional)</li>
+							<li>Type Paying Amount (optional)</li>
+							<li>Add notes (optional)</li>
+							<li>Click Submit</li>
+						</ol>
+				
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HTzGJ2iuc5o" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="create-sale2">
+						<h2 class="section-heading">Create a Sale (from Quotation)</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Quotation tab</li>
+							<li>CLick on the Quotation tab</li>
+							<li>Click Quotation List</li>
+							<li>Click action button on the desired quotation</li>
+							<li>Click Create Sale </li>
+							<li>Add or remove products (optional)</li>
+							<li>Type a discount amount (optional)</li>
+							<li>Type a shipping amount (optional)</li>
+							<li>Select a status</li>
+							<li>Select payment status</li>
+							<li>Select payment choice (optional)</li>
+							<li>Type received amount (optional)</li>
+							<li>Type Paying Amount (optional)</li>
+							<li>Add notes (optional)</li>
+							<li>Click Submit</li>
+						</ol>
+					
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/0PzVGnkyFoU" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+				
+					<section class="docs-section" id="sale-list">
+						<h2 class="section-heading">View Sale List</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Sale tab</li>
+							<li>CLick on the Sale tab</li>
+							<li>Click Sale List</li>
+						</ol>
+						<p>You can export your Sale List as Excel or as PDF.</p>
+						<p>You can export your sale invoice as PDF by clicking on the Action button then click Download PDF</p>
+				
+						<h6>Add a payment to a Sale:</h6>
+						<p>If the customer paid and you want to record that payment. The customer can pay in installment
+							by not typing the full amount.</p>
+						<ol>
+							<li>View Sale List</li>
+							<li>Click the action button on the sale you want</li>
+							<li>Click Create Patment</li>
+							<li>Type the received amount</li>
+							<li>Type the paying amount</li>
+							<li>Select the type of payment</li>
+							<li>Add note (optional)</li>
+							<li>Click submit button</li>
+						</ol>
+				
+						<h6>Send your sale invoice to your customer email directly:</h6>
+						<ol>
+							<li>First make sure the customer email is correct</li>
+							<li>View Sale List</li>
+							<li>Click the action button on the sale you want to send</li>
+							<li>Click Detail Sale</li>
+							<li>Click Email button</li>
+						</ol>
+				
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/uZv7MecHZog" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="sales-retrun">
+					<header class="docs-header">
+						<h1 class="docs-heading">Sales Return</h1>
+						<section class="docs-intro">
+							<p>The use of Sale Return feature is to help you record all your sale returns and link it to your customers. It will
+								help you organize your sales more and what have you returned into stock.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="create-sales-retrun">
+						<h2 class="section-heading">Create a Sales Return</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Sales Return tab</li>
+							<li>CLick on the Sales Return tab</li>
+							<li>Click Create Return </li>
+							<li>Select a customer</li>
+							<li>Select a warehouse</li>
+							<li>Add products</li>
+							<li>Type a discount amount (optional)</li>
+							<li>Type a shipping amount (optional)</li>
+							<li>Add notes (optional)</li>
+							<li>Click Submit</li>
+						</ol>
+				
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bip_JNx4nNU" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+				
+					<section class="docs-section" id="sales-retrun-list">
+						<h2 class="section-heading">View Sales Return List</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Sales Return tab</li>
+							<li>CLick on the Sales Return tab</li>
+							<li>Click Return List</li>
+						</ol>
+						<p>You can export your Sale List as Excel or as PDF.</p>
+						<p>You can export your return invoice as PDF by clicking on the Action button then click Download PDF</p>
+				
+						<h6>Add a payment to a Sales Return:</h6>
+						<p>If you return the payment to your customer and you want to record that payment. You can pay in installment
+							by not typing the full amount.</p>
+						<ol>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want</li>
+							<li>Click Create Patment</li>
+							<li>Type the received amount</li>
+							<li>Type the paying amount</li>
+							<li>Select the type of payment</li>
+							<li>Add note (optional)</li>
+							<li>Click submit button</li>
+						</ol>
+				
+						<h6>Send your sale return invoice to your customer email directly:</h6>
+						<ol>
+							<li>First make sure the customer email is correct</li>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want to send</li>
+							<li>Click Return Detail</li>
+							<li>Click Email button</li>
+						</ol>
+				
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/WXwDiAAHz7s" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="purchase-retrun">
+					<header class="docs-header">
+						<h1 class="docs-heading">Purchase Return</h1>
+						<section class="docs-intro">
+							<p>The use of Purchase Return feature is to help you record all your purchase returns and link it to your
+								suppliers. It will help you organize your purchases more and what have you given back to your supplier.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="create-purchase-retrun">
+						<h2 class="section-heading">Create a Purchase Return</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Purchase Return
+								tab</li>
+							<li>CLick on the Purchase Return tab</li>
+							<li>Click Create Return </li>
+							<li>Select a supplier</li>
+							<li>Select a warehouse</li>
+							<li>Add products</li>
+							<li>Type a discount amount (optional)</li>
+							<li>Type a shipping amount (optional)</li>
+							<li>Add notes (optional)</li>
+							<li>Click Submit</li>
+						</ol>
+				
+						<!-- <h6>The following video elistrate how:</h6>
+						<br>
+						<video width="80%" controls>
+							<source src="assets/tutorialـvideos/create_purchase.mp4" type="video/mp4">
+							Your browser does not support HTML video.
+						</video> -->
+					</section>
+					<!--//section-->
+				
+					<section class="docs-section" id="purchase-retrun-list">
+						<h2 class="section-heading">View Purchase Return List</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Purchase Return
+								tab</li>
+							<li>CLick on the Purchase Return tab</li>
+							<li>Click Return List</li>
+						</ol>
+						<p>You can export your Purchase List as Excel or as PDF.</p>
+						<p>You can export your return invoice as PDF by clicking on the Action button then click Download PDF</p>
+				
+						<h6>Add a payment to a Purchase Return:</h6>
+						<p>If you return the payment to your supplier and you want to record that payment. You can pay in installment
+							by not typing the full amount.</p>
+						<ol>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want</li>
+							<li>Click Create Patment</li>
+							<li>Type the received amount</li>
+							<li>Type the paying amount</li>
+							<li>Select the type of payment</li>
+							<li>Add note (optional)</li>
+							<li>Click submit button</li>
+						</ol>
+				
+						<h6>Send your purchase return invoice to your supplier email directly:</h6>
+						<ol>
+							<li>First make sure the supplier email is correct</li>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want to send</li>
+							<li>Click Return Detail</li>
+							<li>Click Email button</li>
+						</ol>
+				
+						<!-- <h6>The following video elistrate how:</h6>
+						<br>
+						<video width="80%" controls>
+							<source src="assets/tutorialـvideos/view_purchase_list.mp4" type="video/mp4">
+							Your browser does not support HTML video.
+						</video> -->
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="reports">
+					<header class="docs-header">
+						<h1 class="docs-heading">How To use Reports</h1>
+						<section class="docs-intro">
+							<p>Wanna know how did your business do this week, month or quarter. With the report feature it will tell you how much you made, what customers or suppliers are affecting your business and the status of your products. This section will guid you through all features report can do.</p>
+							
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="payments">
+						<h2 class="section-heading">Payments</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Reports tab</li>
+							<li>CLick on the Reports tab</li>
+							<li>Click Payments</li>
+							<li>Click on one of the options (Purchase, Sales, Sales Return or Purchase Return)</li>
+						</ol>
+
+						<p>You can export your list as Excel or as PDF.</p>
+						<p>You can filter your list before exporting.</p>
+				
+					</section>
+					<!--//section-->
+				
+					<section class="docs-section" id="profits-and-losts">
+						<h2 class="section-heading">Profits And Losts</h2>
+						<h6>How much money you spent in:</h6>
+						<ul>
+							<li>Sales</li>
+							<li>Purchases</li>
+							<li>Sales Return</li>
+							<li>Purchases Return</li>
+							<li>Expenses</li>
+							<li>Profit (Sales - Purchases)</li>
+							<li>Payments Received</li>
+							<li>Payments Sent</li>
+							<li>Payments Net (Payments Received - Payments Sent)</li>
+						</ul>
+						<h6>How to use:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Reports tab</li>
+							<li>CLick on the Reports tab</li>
+							<li>Click Profits And Losts</li>
+							<li>Select the range you need (today, yesterday, last 7 days, last 30 days, last 90 days, last 365 days or custom
+								range)</li>
+							<li>click submit to confirm</li>
+						</ol>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="quantity-alerts">
+						<h2 class="section-heading">Product Quantity Alerts</h2>
+						<p>Product Quantity Alerts feature is made for you to know which product is running out of stock based on the stock alert specified when creating a product.</p>
+						<h6>How to use:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Reports tab</li>
+							<li>CLick on the Reports tab</li>
+							<li>Click Product Quantity Alerts, a list of running out of stock products</li>
+							<li>Filiter products by a warehouse (optional)</li>
+						</ol>
+						
+						<p>You can also know by clicking on the notificaiton button on the top right of the screen.</p>
+						
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="warehouse-report">
+						<h2 class="section-heading">Warehouse Report</h2>
+						<p>Warehouse Report feature will report you everything you need to know about warehouse/store.</p>
+						<ol>
+							<li>How many quotations made related</li>
+							<li>How many sales made related</li>
+							<li>How many purchases made related</li>
+							<li>How many sales return made related</li>
+							<li>How many purchases return made related</li>
+							<li>How many expenses made related</li>
+							<li>Will have a graph of Total Items & Quantity</li>
+							<li>Will have a graph of Value by Cost and Price</li>
+						</ol>
+						<h6>How to use:</h6>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Reports tab</li>
+							<li>CLick on the Reports tab</li>
+							<li>Click Product Warehouse Report</li>
+							<li>Select a warehouse (optional)</li>
+							<li>Select on of the taps to how did it affected your warehouse/store</li>
+						</ol>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="sale-report">
+						<h2 class="section-heading">Sale Report</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Purchase
+								Return
+								tab</li>
+							<li>CLick on the Purchase Return tab</li>
+							<li>Click Return List</li>
+						</ol>
+						<p>You can export your Purchase List as Excel or as PDF.</p>
+						<p>You can export your return invoice as PDF by clicking on the Action button then click Download PDF</p>
+					
+						<h6>Add a payment to a Purchase Return:</h6>
+						<p>If you return the payment to your supplier and you want to record that payment. You can pay in installment
+							by not typing the full amount.</p>
+						<ol>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want</li>
+							<li>Click Create Patment</li>
+							<li>Type the received amount</li>
+							<li>Type the paying amount</li>
+							<li>Select the type of payment</li>
+							<li>Add note (optional)</li>
+							<li>Click submit button</li>
+						</ol>
+					
+						<h6>Send your purchase return invoice to your supplier email directly:</h6>
+						<ol>
+							<li>First make sure the supplier email is correct</li>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want to send</li>
+							<li>Click Return Detail</li>
+							<li>Click Email button</li>
+						</ol>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="purchase-report">
+						<h2 class="section-heading">Purchase Report</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Purchase
+								Return
+								tab</li>
+							<li>CLick on the Purchase Return tab</li>
+							<li>Click Return List</li>
+						</ol>
+						<p>You can export your Purchase List as Excel or as PDF.</p>
+						<p>You can export your return invoice as PDF by clicking on the Action button then click Download PDF</p>
+					
+						<h6>Add a payment to a Purchase Return:</h6>
+						<p>If you return the payment to your supplier and you want to record that payment. You can pay in installment
+							by not typing the full amount.</p>
+						<ol>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want</li>
+							<li>Click Create Patment</li>
+							<li>Type the received amount</li>
+							<li>Type the paying amount</li>
+							<li>Select the type of payment</li>
+							<li>Add note (optional)</li>
+							<li>Click submit button</li>
+						</ol>
+					
+						<h6>Send your purchase return invoice to your supplier email directly:</h6>
+						<ol>
+							<li>First make sure the supplier email is correct</li>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want to send</li>
+							<li>Click Return Detail</li>
+							<li>Click Email button</li>
+						</ol>
+					
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="customer-report">
+						<h2 class="section-heading">Customer Report</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Purchase
+								Return
+								tab</li>
+							<li>CLick on the Purchase Return tab</li>
+							<li>Click Return List</li>
+						</ol>
+						<p>You can export your Purchase List as Excel or as PDF.</p>
+						<p>You can export your return invoice as PDF by clicking on the Action button then click Download PDF</p>
+					
+						<h6>Add a payment to a Purchase Return:</h6>
+						<p>If you return the payment to your supplier and you want to record that payment. You can pay in installment
+							by not typing the full amount.</p>
+						<ol>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want</li>
+							<li>Click Create Patment</li>
+							<li>Type the received amount</li>
+							<li>Type the paying amount</li>
+							<li>Select the type of payment</li>
+							<li>Add note (optional)</li>
+							<li>Click submit button</li>
+						</ol>
+					
+						<h6>Send your purchase return invoice to your supplier email directly:</h6>
+						<ol>
+							<li>First make sure the supplier email is correct</li>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want to send</li>
+							<li>Click Return Detail</li>
+							<li>Click Email button</li>
+						</ol>
+					
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="supplier-report">
+						<h2 class="section-heading">Supplier Report</h2>
+						<ol>
+							<li>Scroll down on the left side/right side (if you are using RTL) navigation till you see the Purchase
+								Return
+								tab</li>
+							<li>CLick on the Purchase Return tab</li>
+							<li>Click Return List</li>
+						</ol>
+						<p>You can export your Purchase List as Excel or as PDF.</p>
+						<p>You can export your return invoice as PDF by clicking on the Action button then click Download PDF</p>
+					
+						<h6>Add a payment to a Purchase Return:</h6>
+						<p>If you return the payment to your supplier and you want to record that payment. You can pay in installment
+							by not typing the full amount.</p>
+						<ol>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want</li>
+							<li>Click Create Patment</li>
+							<li>Type the received amount</li>
+							<li>Type the paying amount</li>
+							<li>Select the type of payment</li>
+							<li>Add note (optional)</li>
+							<li>Click submit button</li>
+						</ol>
+					
+						<h6>Send your purchase return invoice to your supplier email directly:</h6>
+						<ol>
+							<li>First make sure the supplier email is correct</li>
+							<li>View Return List</li>
+							<li>Click the action button on the return you want to send</li>
+							<li>Click Return Detail</li>
+							<li>Click Email button</li>
+						</ol>
+					</section>
+					<!--//section-->
+					<section class="docs-section" id="report-video">
+						<h2 class="section-heading">Reports Video Tutorial</h2>
+						<br><br>
+						<h6>The following video elistrate how:</h6>
+						<br>
+						<div style="width: 48vw; height: 27vw;">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6vpfBd_oE9Y" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</section>
+					<!--//section-->
+					
+				</article>
+				<!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Designed by Xiaoying Riley for developers</small>
+							<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="https://twitter.com/Rapidware_"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/rapidware_/"><i class="fab fa-instagram fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.linkedin.com/company/rapidware"><i class="fab fa-linkedin fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://api.whatsapp.com/message/4DTBDPNKSHTMO1"><i class="fab fa-whatsapp fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
