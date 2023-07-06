@@ -7,7 +7,7 @@ RewriteCond %{THE_REQUES_FILENAMET} !-d
 
 # check for file with directory with .html extension
 
-RewriteCond %{REQUEST_FILENAME}/docs-page -f
+RewriteCond %{REQUEST_FILENAME}/.html -f
 
 # Here it shows the page that has the .html extension
 RewriteRule ^(.*)$ $1.html [NC,L]
