@@ -3,10 +3,10 @@ RewriteEngine on
 
 # don't apply if exists, do not apply to existing directories 
 
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{THE_REQUES_FILENAMET} !-d
 
 # check for file with directory with .html extension
+
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # Here it shows the page that has the .html extension
